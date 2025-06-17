@@ -2,7 +2,8 @@
 # ReliLab
 
 ![Build](https://img.shields.io/badge/build-passing-brightgreen)
-![Python](https://img.shields.io/badge/python-3.10-blue)
+![Python](https://img.shields.io/badge/python-3.9-blue)
+![Python](https://img.shields.io/badge/python-3.11-blue)
 ![License](https://img.shields.io/badge/license-MIT-yellow)
 
 ReliLab is a test automation framework for validating hardware stress racks. It simulates power cycles, thermal testing, and system recovery, with full logging and report generation.
