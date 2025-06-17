@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ReliLab Dashboard</title>
+  <meta charset="utf-8">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <h2>ReliLab: Temperature vs Voltage</h2>
+  <canvas id="metricsChart" width="600" height="300"></canvas>
+  <script>
+    const ctx = document.getElementById('metricsChart').getContext('2d');
+    const chart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: ['T1', 'T2', 'T3', 'T4'],
+        datasets: [
+          { label: 'Voltage (V)', data: [3.3, 3.29, 3.31, 3.28], borderColor: 'blue' },
+          { label: 'Temperature (C)', data: [40, 50, 60, 70], borderColor: 'red' }
+        ]
+      },
+      options: { responsive: true }
+    });
+  </script>
+</body>
+</html>
